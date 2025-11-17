@@ -4,24 +4,48 @@
     "slug": "headache-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "headachetracker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/splash-icon.png",
-      "resizeMode": "contain",
+      "image": "./assets/images/logo.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "splash": {
+        "image": "./assets/images/logo.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      }
     },
     "android": {
+      "permissions": [
+         "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "googleServicesFile": "./android/app/google-services.json",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "splash": {
+        "image": "./assets/images/logo.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff",
+        "mdpi": "./assets/images/logo.png",
+        "hdpi": "./assets/images/logo.png",
+        "xhdpi": "./assets/images/logo.png",
+        "xxhdpi": "./assets/images/logo.png",
+        "xxxhdpi": "./assets/images/logo.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.headachetracker"
     },
     "web": {
       "bundler": "metro",
@@ -29,10 +53,27 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      "expo-web-browser",
+       [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow this app to save PDF reports.",
+          "savePhotosPermission": "Allow this app to write PDF files to storage."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "07e8202e-7328-42eb-aae0-5963de649366"
+      }
+    },
+    "owner": "priyam_2003"
   }
 }

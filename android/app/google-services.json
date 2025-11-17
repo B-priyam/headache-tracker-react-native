@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "942530786086",
+    "project_id": "headache-tracker-ef520",
+    "storage_bucket": "headache-tracker-ef520.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942530786086:android:701b4ad76bf457192747e7",
+        "android_client_info": {
+          "package_name": "com.anonymous.headachetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRvCFtmJARibrlfiw6FgWKq0EPO8fa1kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
