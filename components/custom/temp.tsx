@@ -22,7 +22,6 @@ import {
   differenceInMinutes,
   startOfDay,
 } from "date-fns";
-import CustomDateSelector from "./customDateSelector";
 import { useUserStore } from "@/store/userStore";
 import {
   backSideRegions,
@@ -47,8 +46,6 @@ const Report = (data: any) => {
   );
   const regionFrontRef = useRef<any | null>(null);
   const regionBackRef = useRef<any | null>(null);
-  // console.log(startDate instanceof Date);
-  // console.log(format(startDate, "do MMM yyyy"));
   const [endDate, setEndDate] = useState<Date | undefined>(new Date());
   const [allSeverity, setAllSeverity] = useState<any>([
     {
